@@ -1,0 +1,25 @@
+fee#!/usr/bin/env python2
+# vim:fileencoding=utf-8
+from __future__ import unicode_literals, division, absolute_import, print_function
+from calibre.web.feeds.news import BasicNewsRecipe
+
+class AdvancedUserRecipe1457049973(BasicNewsRecipe):
+    title          = 'News'
+    oldest_article = 7
+    max_articles_per_feed = 20
+    auto_cleanup   = True
+
+    feeds          = [
+        ('\u8BDd\u9898', 'http://view.news.qq.com/index2010/zhuanti/ztrss.xml'),
+        ('\u56fd\u5185', 'http://news.baidu.com/n?cmd=1&class=civilnews&tn=rss'),
+        ('\u56fd\u9645', 'http://news.baidu.com/n?cmd=1&class=internews&tn=rss'),
+        ('\u8d22\u7ecf', 'http://news.baidu.com/n?cmd=1&class=finannews&tn=rss'),
+        ('\u79d1\u6280', 'http://news.baidu.com/n?cmd=1&class=technnews&tn=rss'),
+        ('\u51b7\u5154', 'http://www.vccoo.com/a/5k7fv/rss.xml'),
+        ('\u77e5\u4e4e\u6bcf\u65e5\u7cbe\u9009', 'http://www.zhihu.com/rss'),
+        ('\u5C0F\u4F17\u8F6F\u4EF6', 'http://feed.appinn.com/'),
+        ('\u6781\u5BA2\u516C\u56ED', 'http://feeds.geekpark.net/'),
+        
+    ]
+    
+    
