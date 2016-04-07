@@ -35,6 +35,8 @@ echo 'deb http://archive.ubuntu.com/ubuntu trusty-updates main universe restrict
 export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive && \
 apt-get update && \
 apt-get install -y ImageMagick && \
+# Chinese fonts
+apt-get install ttf-wqy-microhei && \
 #########################################
 ##          GUI APP INSTALL            ##
 #########################################
