@@ -36,7 +36,7 @@ export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive && \
 apt-get update && \
 apt-get install -y ImageMagick && \
 # Chinese fonts
-apt-get install ttf-wqy-microhei && \
+apt-get install -y ttf-wqy-microhei && \
 #########################################
 ##          GUI APP INSTALL            ##
 #########################################
